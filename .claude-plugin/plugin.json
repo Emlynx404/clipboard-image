@@ -1,0 +1,9 @@
+{
+  "name": "clipboard-image",
+  "description": "Paste images from clipboard or drag image files into Claude Code CLI",
+  "version": "0.1.0",
+  "author": {
+    "name": "emcow"
+  },
+  "keywords": ["clipboard", "image", "paste", "screenshot"]
+}
