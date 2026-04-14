@@ -53,11 +53,36 @@ The image will be saved to the specified directory instead of `/tmp`.
 
 ## Platform Support
 
-- **macOS** — supported (uses osascript + sips)
-- **Linux** — not yet supported
-- **Windows** — not yet supported
+| Platform | Clipboard Tool | Resize Tool | Status |
+|----------|---------------|-------------|--------|
+| macOS | osascript (built-in) | sips (built-in) | Supported |
+| Linux (X11) | xclip | ImageMagick (optional) | Supported |
+| Linux (Wayland) | wl-paste | ImageMagick (optional) | Supported |
+| Windows | PowerShell (built-in) | ImageMagick (optional) | Supported |
+
+### Linux Prerequisites
+
+Install the clipboard tool for your display server:
+
+```bash
+# X11
+sudo apt install xclip
+
+# Wayland
+sudo apt install wl-clipboard
+```
+
+Optional — install ImageMagick for auto-resize of large screenshots:
+
+```bash
+sudo apt install imagemagick
+```
+
+### Windows Prerequisites
+
+No additional tools required. Optional — install [ImageMagick](https://imagemagick.org/script/download.php#windows) for auto-resize of large screenshots.
 
 ## Requirements
 
-- macOS
 - Claude Code CLI
+- Platform-specific clipboard tool (see Platform Support above)
