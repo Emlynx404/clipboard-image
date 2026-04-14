@@ -28,6 +28,11 @@ osascript -e "
 " 2>/dev/null
 
 if [ -f "$FILEPATH" ]; then
+  # Resize if wider than 1920px to reduce file size
+  width=$(sips -g pixelWidth "$FILEPATH" 2>/dev/null | tail -1 | awk '{print $2}')
+  if [ -n "$width" ] && [ "$width" -gt 1920 ]; then
+    sips --resampleWidth 1920 "$FILEPATH" >/dev/null 2>&1
+  fi
   echo "{\"success\":true,\"path\":\"${FILEPATH}\"}"
 else
   echo '{"success":false,"error":"图片导出失败"}'

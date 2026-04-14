@@ -4,9 +4,11 @@ argument-hint: [--save <directory>] [prompt]
 allowed-tools: Bash, Read
 ---
 
-The user wants to paste an image from their clipboard. Follow these steps exactly:
+The user wants to paste an image from their clipboard. The user provided: $ARGUMENTS
 
-1. **Parse arguments:** Check if the user provided `--save <directory>`. If yes, use that directory as SAVE_DIR. If no, use `/tmp` as SAVE_DIR. Any remaining text after the flags is the user's PROMPT.
+Follow these steps exactly:
+
+1. **Parse arguments:** From the text above, check if the user provided `--save <directory>`. If yes, use that directory as SAVE_DIR. If no, use `/tmp` as SAVE_DIR. Any remaining text after the flags is the user's PROMPT.
 
 2. **Extract image from clipboard:** Run this command:
    ```
