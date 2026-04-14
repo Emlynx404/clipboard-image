@@ -15,19 +15,19 @@ Copy an image to your clipboard (screenshot, browser image, etc.), then in Claud
 **Paste with a prompt:**
 
 ```
-/paste What bugs do you see in this screenshot?
+/clipboard-image:paste What bugs do you see in this screenshot?
 ```
 
 **Paste without a prompt:**
 
 ```
-/paste
+/clipboard-image:paste
 ```
 
 **Save to a specific directory:**
 
 ```
-/paste --save ./screenshots Analyze this architecture diagram
+/clipboard-image:paste --save ./screenshots Analyze this architecture diagram
 ```
 
 ## Features
