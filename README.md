@@ -4,15 +4,17 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin that lets
 
 ## Install
 
-Clone the repository:
+In Claude Code, run:
+
+```
+/plugin marketplace add emlynx404/clipboard-image
+/plugin install clipboard-image@clipboard-image
+```
+
+**Alternative (from source):**
 
 ```bash
 git clone https://github.com/emlynx404/clipboard-image.git
-```
-
-Then start Claude Code with the plugin:
-
-```bash
 claude --plugin-dir /path/to/clipboard-image
 ```
 
