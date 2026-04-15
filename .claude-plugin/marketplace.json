@@ -1,7 +1,7 @@
 {
   "name": "clipboard-image",
   "owner": {
-    "name": "emcow"
+    "name": "emlynx404"
   },
   "metadata": {
     "description": "Paste images from clipboard into Claude Code CLI"
@@ -13,7 +13,7 @@
       "description": "Paste images from clipboard or drag image files into Claude Code CLI",
       "version": "0.1.0",
       "author": {
-        "name": "emcow"
+        "name": "emlynx404"
       }
     }
   ]

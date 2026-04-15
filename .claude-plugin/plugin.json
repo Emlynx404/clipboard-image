@@ -3,7 +3,7 @@
   "description": "Paste images from clipboard or drag image files into Claude Code CLI",
   "version": "0.1.0",
   "author": {
-    "name": "emcow"
+    "name": "emlynx404"
   },
   "keywords": ["clipboard", "image", "paste", "screenshot"]
 }
