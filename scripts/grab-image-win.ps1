@@ -9,7 +9,8 @@ param(
 Add-Type -AssemblyName System.Windows.Forms
 
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
-$filename = "claude-paste-$timestamp.png"
+$rand = -join ((0..3) | ForEach-Object { '{0:x}' -f (Get-Random -Maximum 16) })
+$filename = "claude-paste-$timestamp-$rand.png"
 $filepath = Join-Path $SaveDir $filename
 
 # Check clipboard for image

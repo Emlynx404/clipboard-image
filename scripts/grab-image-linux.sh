@@ -4,7 +4,8 @@
 # Output: JSON to stdout
 
 SAVE_DIR="${1:-/tmp}"
-FILENAME="claude-paste-$(date +%Y%m%d-%H%M%S).png"
+RAND=$(head -c 2 /dev/urandom | xxd -p)
+FILENAME="claude-paste-$(date +%Y%m%d-%H%M%S)-${RAND}.png"
 FILEPATH="${SAVE_DIR}/${FILENAME}"
 
 # Detect display server and choose tool

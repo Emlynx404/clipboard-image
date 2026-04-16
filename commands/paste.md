@@ -24,4 +24,4 @@ Follow these steps exactly:
 
 5. **Respond:**
    - If the user provided a PROMPT, respond to their prompt based on the image content.
-   - If no PROMPT was provided, tell the user "已接收图片：<file_path>" and wait for further instructions.
+   - If no PROMPT was provided, tell the user "Image received: <file_path>" and wait for further instructions.
